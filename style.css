@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Phantom Sans";
+  src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff")
+      format("woff"),
+    url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Phantom Sans";
+  src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff")
+      format("woff"),
+    url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Phantom Sans";
+  src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff")
+      format("woff"),
+    url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2")
+      format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body,
+html {
+  margin: 0;
+  font-family: Phantom Sans, sans-serif;
+}
+
+.header {
+  width: 100%;
+  max-height: fit-content;
+  padding-bottom: 30px;
+  margin: 0;
+  padding-top: 0;
+  background-color: #ec3750; /* Replace with your club's primary colour */
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  color: white; /* Adjust this for best readability */
+}
+
+.header-text h1 {
+  font-size: 4.3rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 0.625rem;
+}
+
+nav ul li a,
+li a {
+  color: #ec3750; /* Replace with your club's primary colour */
+  text-decoration: none;
+  font-size: 1.7rem;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  background: url("/img/Flagship2.jpg") center/cover no-repeat; /* Replace with an image of your club */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero h1,
+.hero p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+}
+
+.hero p {
+  font-size: 2.5rem;
+}
+
+.content {
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 15px;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  background-color: #ec3750; /* Replace with your club's primary colour */
+  padding: 30px;
+  border-radius: 30px;
+  margin: 20px;
+  color: white; /* Adjust this for best readability */
+  text-decoration: none;
+}
+
+.member img {
+  width: 300px;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  justify-content: center;
+  width: 100%;
+  max-height: fit-content;
+  margin: 0;
+  padding-top: 0;
+  background-color: #ec3750; /* Replace with your club's primary colour */
+}
